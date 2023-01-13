@@ -1,25 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import Navbar from './components/navbar';
+import Products from './components/products';
+import FilterProducts from './components/filterproducts'
+import Cart from './components/cart';
+import SingleItem from './components/singleitem';
+
+import Start from './components/pages/Start'
+import Footer from './components/Footer'
+import TopBtn from './components/pages/TopButton'
+import Wpp from './components/pages/Wpp'
+import Banner from './components/pages/Banner'
+import {BrowserRouter as Router, 
+  Switch, 
+  Route, 
+  Redirect,
+   //useLocation
+  } 
+   from 'react-router-dom'
+import { connect } from 'react-redux'
+
+function App({currentItem}) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Router>
+    <Navbar/>
+    <Banner />
+     <main> 
+            <Switch>
+              <Route exact path="/" component={Start}/>
+                  <Route exact path="/productos"  component={Products}/>
+                  <Route exact path="/carrito"  component={Cart}/>
+                  <Route exact path="/filtros"  component={FilterProducts}/>
+                  {!currentItem ?<Redirect to='/'/>:
+                  <Route exact path="/producto/:id"  component={SingleItem}/>
+                  }
+            </Switch>
+      </main>
+    </Router>
+    <Wpp/>
+    <TopBtn/>
+    <Footer />
+    </>
+    
+  );                      
 }
-
-export default App;
+/*<Route path="*" component={NotFound}/>
+function NotFound(){
+  const location = useLocation()
+  return( 
+  <>
+  You are on: {location.pathname}
+  </>)
+}
+*/
+const mapStateToProps = state =>{
+  return{
+    currentItem: state.shop.currentItem
+  }
+}
+export default connect(mapStateToProps)(App);

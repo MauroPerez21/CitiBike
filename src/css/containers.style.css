@@ -1,0 +1,30 @@
+.productContainer{
+    position:relative;
+    width:100%;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 0.25fr 1.75fr;
+ }
+ .productContainer .dashboard{
+     position:relative;
+     padding:40px;
+   
+ }
+ .dashboard a{
+  text-decoration: none;
+  letter-spacing: 0.25em;
+  color:var(--gs-react);
+  font-weight: bolder;
+  font-size: larger;
+  
+ }
+ .productContainer .products{
+     position:relative;
+     padding:40px;
+ }
+ @media(max-width:768px){
+    .productContainer{
+      display: flex;
+      flex-direction: column;
+    }
+  }
