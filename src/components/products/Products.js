@@ -23,6 +23,10 @@ const Product = ({productData, addToCart,loadCurrent}) => {
         })
     },[cards])
     */
+   const f = new Intl.NumberFormat("es-sp",{
+    currency:"COP",
+    style:"currency",
+   })
     return ( 
         
     <div className='cardContainer'>
@@ -32,10 +36,13 @@ const Product = ({productData, addToCart,loadCurrent}) => {
             </h2>
         </div>
         <div className='cardBody'>
-            <img
-            src={productData.image}
-            alt={productData.title}
-            />
+            {!productData.image?<div>cargando...</div>:
+                <img
+                src={productData.image}
+                alt={productData.title}
+                />
+            }
+            
         </div>
         <div className='cardBox'>
             <div>
@@ -48,7 +55,7 @@ const Product = ({productData, addToCart,loadCurrent}) => {
             </div>
             <div>
                 <h4>Precio:&nbsp;</h4>
-                <p>${`${productData.price}.0`}</p>
+                <p>${`${f.format(productData.price)}`}</p>
             </div>
         </div>
         

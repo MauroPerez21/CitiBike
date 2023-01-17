@@ -1,9 +1,10 @@
 {
   "name": "citi-bike",
   "version": "0.1.0",
-  "homepage":"https://mauroperez21.github.io/CitiBike/",
+  "homepage": "https://mauroperez21.github.io/Citibike/",
   "private": true,
   "dependencies": {
+    "@tanstack/react-query": "^4.22.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -21,8 +22,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

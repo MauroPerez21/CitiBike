@@ -8,7 +8,7 @@ const CartItem = ({adjustQty,removeFromCart,...props}) => {
     const onChangeHandler = (e)=>{
         setInput(e.target.value)
         adjustQty(props.itemData.id, e.target.value)
-        console.log(e.target.value)
+        //console.log(e.target.value)
     }
     return ( 
     <tr>

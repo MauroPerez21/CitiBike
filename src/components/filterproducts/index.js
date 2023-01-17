@@ -11,11 +11,10 @@ import './aside.css'
 const Categories = ({products, filterItems}) => {
   document.getElementById('title').innerHTML = 'Citi Bike | categorias '
     const [loading, setLoading] = R.useState(true)
-        useTimeout(()=>setLoading(false),50)
+        useTimeout(()=>setLoading(false),500)
     return ( 
     <>
     <div className="glass"> 
-
    <div className="productContainer">
     <div className="dashboard">
     <Link to='/productos' className="navLinks"><i><IoEllipsisVerticalSharp /></i>Productos</Link> 
