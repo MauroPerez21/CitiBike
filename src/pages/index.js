@@ -1,18 +1,18 @@
-//import Biciclette from '../../assets/images/_mx1.jpg'
-import Calling from './Modal'
-import useToggle from '../../hooks/useToggle'
-import alesia from './alesia-kazantceva-Ob1grL3RBvI-unsplash.jpg'
-import jump from '../../css/nicolas-picard-JjBQLWs2UPA-unsplash.jpg'
-import Rt from 'react'
-import Hash from '../pages/Loading'
-import About from './About'
-import useTimeout from '../../hooks/useTimeout'
-//import useUpdateEffect from '../../hooks/useUpdateEffect'
 
-export default function StartPage (){
+import Calling from '../components/Modal'
+import Hash from '../components/Loading'
+import useToggle from '../hooks/useToggle'
+import alesia from '../assets/images/alesia-kazantceva-Ob1grL3RBvI-unsplash.jpg'
+import jump from '../css/nicolas-picard-JjBQLWs2UPA-unsplash.jpg'
+import Rt from 'react'
+import useTimeout from '../hooks/useTimeout'
+import About from '../components/About'
+//import R from 'react'
+
+export default function Home (){
     document.getElementById('title').innerHTML = 'Citi Bike | inicio '
     const [loading, setLoading] = Rt.useState(true)
-    useTimeout(()=>setLoading(false),500)
+    useTimeout(()=>setLoading(false),1000)
     const BgImage = {
         backgroundImage:
         `linear-gradient(rgba(40, 44, 52, 0.1), rgba(40, 44, 52, 0.9)), url(${jump})`,
@@ -53,8 +53,6 @@ export default function StartPage (){
                 </div>  
             </div>
         </section>
-        
-
     {
         isDisplaying && (
             <Calling

@@ -1,15 +1,11 @@
-
-import Navbar from './components/navbar';
-import Products from './components/products';
-import FilterProducts from './components/filterproducts'
-import Cart from './components/cart';
-import SingleItem from './components/singleitem';
-
-import Start from './components/pages/Start'
-import Footer from './components/Footer'
-import TopBtn from './components/pages/TopButton'
-import Wpp from './components/pages/Wpp'
-import Banner from './components/pages/Banner'
+import FilterProducts from './pages/filterproducts'
+import Products from './pages/products';
+import Start from './pages'
+import Cart from './pages/cart';
+import Layout from './components/layout'
+import SingleItem from './pages/singleitem';
+import TopBtn from './components/TopButton'
+import Wpp from './components/Wpp'
 import {BrowserRouter as Router, 
   Switch, 
   Route, 
@@ -23,10 +19,8 @@ function App({currentItem}) {
   return (
     <>
     <Router>
-    <Navbar/>
-    <Banner />
-     <main> 
-            <Switch>
+      <Layout>
+        <Switch>
               <Route exact path="/" component={Start}/>
                   <Route exact path="/productos"  component={Products}/>
                   <Route exact path="/carrito"  component={Cart}/>
@@ -35,11 +29,10 @@ function App({currentItem}) {
                   <Route exact path="/producto/:id"  component={SingleItem}/>
                   }
             </Switch>
-      </main>
+      </Layout>
     </Router>
     <Wpp/>
     <TopBtn/>
-    <Footer />
     </>
     
   );                      

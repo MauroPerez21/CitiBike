@@ -1,14 +1,16 @@
+
 import Product from './Products'
+import Hash from '../../components/Loading'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import Hash from '../pages/Loading'
+
 import { IoFunnelSharp } from 'react-icons/io5'
 import Rt from 'react'
 import useTimeout from '../../hooks/useTimeout'
 const Products = ({products}) => {
     document.getElementById('title').innerHTML = 'Citi Bike | productos '
     const [loading, setLoading] = Rt.useState( true )
-    useTimeout(()=>setLoading(false),50)
+    useTimeout(()=>setLoading(false),1000)
     return ( 
     <>
     <div className="glass">
@@ -16,7 +18,7 @@ const Products = ({products}) => {
         <div className='dashboard'>
              <Link to='/filtros' className="navLinks"><i><IoFunnelSharp/></i> Categorias</Link> 
         </div>
-        <div className='products'>
+        <div>
             <h1>Productos</h1>
             {loading? <Hash />:
              <div className='card'>

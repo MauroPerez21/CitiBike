@@ -3,19 +3,20 @@
     bottom: 24px; /* Place the button at the bottom of the page */
     right: 24px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: var(--gs-react); /* Set a background color */
     color: var(--azurra); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 50%; /* Rounded corners */
+    border:2px solid var(--azurra);
     font-size: 1.5rem; /* Increase font size */
     transition: 0.2s ease;
   }
   .topbtn:hover{
       background-color: var(--azurra); /* Set a background color */
-      color: var(--gs-react); /* Text color */   
+      color: var(--gs-react); /* Text color */ 
+      border:2px solid var(--gs-react);
   }
   .topbtn p {
    position: fixed; /* Fixed/sticky position */

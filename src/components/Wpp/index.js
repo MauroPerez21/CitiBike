@@ -1,6 +1,6 @@
 import React from 'react'
 
-import useToggle from '../../../hooks/useToggle'
+import useToggle from '../../hooks/useToggle'
 import {RiWhatsappFill} from 'react-icons/ri'
 import './wpp.style.css'
 
@@ -26,7 +26,7 @@ const Wpp = () => {
     className="fixed-wpp"
       ref={button}
       onMouseOver={setShow}
-      ><a href="https://api.whatsapp.com/send?phone=+3013820618" className="icon-wpp">
+      ><a href="https://api.whatsapp.com/send?phone=+3106323631" className="icon-wpp">
         <RiWhatsappFill/>
           
           </a>

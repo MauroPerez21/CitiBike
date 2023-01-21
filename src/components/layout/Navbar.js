@@ -15,6 +15,7 @@ const Navbar = ({cart}) => {
     return ( 
     <div className='topNav'>
         <div className="appLogo"></div>
+        <div className='navWrapper'>
             <nav className="fixedNav">
                 <div className="navWrapper">
                 <Link to='/' className="navLinks">< BsHouse/>&nbsp;inicio</Link> 
@@ -24,6 +25,8 @@ const Navbar = ({cart}) => {
                     </Link>  
                 </div>
             </nav>
+        </div>
+            
     </div> 
     );
 }

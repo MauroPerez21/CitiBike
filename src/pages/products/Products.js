@@ -4,25 +4,7 @@ import { addToCart, loadCurrent} from '../../redux/Shopping/shopping-actions'
 import {BsFillEyeFill, BsCart2} from 'react-icons/bs'
 //import React from 'react'
 const Product = ({productData, addToCart,loadCurrent}) => {
-    /*
-    const cards = document.querySelectorAll('.cardContainer')
-    React.useEffect(()=>{
-        const observer = new IntersectionObserver(entries =>{
-            console.log(entries)
-            entries.forEach(entry=>{
-                entry.target.classList.toggle('show', entry.isIntersecting)
-            },{
-                threshold:0.5,
-                rootMargin:"-100px"
-            }
-            )
-        })
-    
-        cards.forEach(card=>{
-            observer.observe(card)
-        })
-    },[cards])
-    */
+   
    const f = new Intl.NumberFormat("es-sp",{
     currency:"COP",
     style:"currency",

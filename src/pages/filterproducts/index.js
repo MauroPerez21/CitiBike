@@ -1,5 +1,5 @@
 
-import Hash from '../pages/Loading'
+import Hash from '../../components/Loading'
 import Products from "./Products";
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
@@ -11,7 +11,7 @@ import './aside.css'
 const Categories = ({products, filterItems}) => {
   document.getElementById('title').innerHTML = 'Citi Bike | categorias '
     const [loading, setLoading] = R.useState(true)
-        useTimeout(()=>setLoading(false),500)
+        useTimeout(()=>setLoading(false),1000)
     return ( 
     <>
     <div className="glass"> 
@@ -61,7 +61,7 @@ const Categories = ({products, filterItems}) => {
       </ul>
     </div>  
     </div>
-    <div className="products">
+    <div>
         <h1>Categorias</h1>
         {
             loading ? <Hash />:

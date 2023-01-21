@@ -26,7 +26,10 @@ main{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+width:100%;
+margin:0 auto;
 }
+
 .glass{
   background: var(--gs-light);
   top:96px;

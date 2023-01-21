@@ -1,8 +1,7 @@
-import Map from './Modal/Map'
-import useToggle from '../../hooks/useToggle';
-
 import { IoBicycleSharp, IoBuildSharp } from "react-icons/io5";
 import {ImLocation} from 'react-icons/im'
+import Map from '../components/Modal/Map'
+import useToggle from '../hooks/useToggle'
 const About = () => {
     const [map, setMap] = useToggle(false)
     const handleMap = ()=>{
@@ -55,5 +54,4 @@ const About = () => {
     </> 
      );
 }
- 
-export default About;
+export default About

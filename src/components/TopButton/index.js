@@ -1,16 +1,12 @@
 import React from "react";
 import './topbutton.style.css'
+import { BsFillArrowUpCircleFill } from "react-icons/bs"
+
 export default function TopButton(){
     const viewRef = React.useRef()
-   // let relativeHeight = document.documentElement.scrollTop
-    //let height = document.documentElement.scrollHeight
-    //let div = relativeHeight/height
     const [top, setTop] = React.useState(0) 
-//console.log(div)
-    // console.log(viewRef.current) 
     const displayTop = ()=>{
-        setTop(document.documentElement.scrollTop)
-        
+        setTop(document.documentElement.scrollTop)   
     }
     const windowTop = () => {
         document.body.scrollTop = 0
@@ -30,7 +26,7 @@ export default function TopButton(){
             ref={viewRef}
             className="topbtn"
             onClick={windowTop}
-            >&#9195;
+            ><BsFillArrowUpCircleFill/>
             <div className='top'>
               <p className='topText'>Ir al principio</p>
             </div>

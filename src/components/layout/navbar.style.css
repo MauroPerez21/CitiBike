@@ -4,21 +4,22 @@
     background: rgb(40, 44, 52, 0.75);
     width:100%;
     top:0;
+    right:0;
     height: 48px;
     border-bottom: 2px solid var(--azurra);
     z-index:999;
 }
 .fixedNav{
     position:fixed;
-    right:5%;
+    right:0;
     top:0;
-    max-width:100%;
+   
 }
 .navWrapper{
   overflow: hidden;
   display:flex;
   flex-direction: row;
-  
+   max-width:95%;
 }
 .navWrapper a{
     height:48px;

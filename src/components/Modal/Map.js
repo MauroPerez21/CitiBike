@@ -19,7 +19,7 @@ const Map = ({bool})=>{
                             ref={mapRef}
                             width="100%" 
                             height="400px" 
-                            src="https://maps.google.com/maps?q=4.1380422,-73.6251066&amp;z=15&amp;output=embed ">
+                            src="https://maps.google.com/maps?q=6.0273633,-75.4271104&amp;z=15&amp;output=embed ">
                             </iframe>
                     </div>
             </div>

@@ -1,40 +1,64 @@
+@media screen and (max-width: 768px) {
+  .siteMap ul li{
+    line-height: 0em;
+    }
+.footerContainer{
+  display:flex;
+  flex-direction: column-reverse;
+    justify-content:left;
+    align-items:center;
+    overflow-x: auto;
+    margin-bottom: 1em;
+}
+
+.listInfo{
+  line-height: 0.75;
+  font-size: 12px;
+  text-indent:0;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+.listInfo h4{
+  
+  font-size:medium;
+  
+}
+.listInfo p{
+  
+  font-size:medium;
+  
+}
+
+}
 
 .footer{
-   
+padding: 2em 2em;
     background-image: 
     linear-gradient(to bottom,
     rgba(40, 44, 52, 0.1),
     var(--gs-react));
-    width:100%;
-
-
+    max-width:100%;
 }
 .footerContainer{
     display:flex;
-    flex-direction: row;
-    align-items:stretch;
-    justify-content:space-evenly;
+    justify-content:left;
+    align-items:baseline;
+    padding:2em auto;
+   
 }
-@media screen and (max-width: 768px) {
-.footerContainer{
-  display:flex;
-  flex-direction: column-reverse;
-  align-items:center;
-  justify-content:space-evenly;
+.footerContainer div{
+  max-width: 120%;
+    margin: 0 auto;
 }
-}
-
 
 .icon{
-    
     background: var(--gs-react);
-    margin: 12px;
+    margin: 0 auto;
     padding: 12px;
     width: 120px;
     border: 3px solid var(--gs-light);
     border-radius: 12px;
     text-align: center;
-    
 }
 .icon p{
   font-size: 2em;
@@ -44,7 +68,7 @@
   -webkit-text-stroke-color: var(--gs-light);
   letter-spacing: 0.25em;
 }
-.icon i{
+.icon span{
   transform: scale(2);
   color: var(--azurra);
   font-size: 4em;
@@ -67,27 +91,29 @@
       monospace;
       color:var(--gs-light);
       text-align: center;
-      border-top: 2px solid var(--gs-light);
+      border-top: 2px solid var(--azurra);
       background: var(--gs-react);
       padding:12px 12px 12px;
   }
   .codeSpacing{
     letter-spacing: 0.25em;
   }
-  .addressInfo{
+  .listInfo{
     display:flex;
     flex-direction: row;
+    justify-content: left;
+    align-items:baseline;
     font-size: larger;
     text-indent: 0.25em;
     word-spacing: 0.5em;
     letter-spacing: 0.125em;
     line-height: 1.5;
   }
-  .addressInfo h4{
+  .listInfo h4{
     font-weight: bolder;
     text-transform: capitalize;
   }
-  .addressInfo p{
+  .listInfo p{
     font-weight:400;
     text-transform: uppercase;
   }
@@ -108,4 +134,25 @@
 }
 .footerInnerRow{
   display: inline-block;
+}
+.siteMap{
+  text-align: center;
+}
+.siteMap ul{
+display: inline-block;
+}
+.siteMap ul li{
+line-height: 3em;
+}
+.siteMap ul li a{
+  text-decoration: none;
+  color:var(--blu);
+  transition:1s;
+}
+.siteMap ul li a:hover{
+  text-decoration: none;
+  -webkit-text-fill-color: rgba(40, 44, 52, 0.5); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--gs-light);
+
 }
