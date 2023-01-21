@@ -5,6 +5,7 @@ import CartItem from './CartItems'
 import { IoCartOutline } from "react-icons/io5";
 const Cart = ({cart}) => {
     document.getElementById('title').innerHTML = 'Citi Bike | carrito '
+    document.documentElement.scrollTop=0
     const [totalPrice, setTotalPrice] = R.useState(0)
     const [totalItems, setTotalItems] = R.useState(0)
     

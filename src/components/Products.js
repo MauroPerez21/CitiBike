@@ -1,24 +1,37 @@
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { addToCart, loadCurrent} from '../../redux/Shopping/shopping-actions'
+import { addToCart, loadCurrent} from '../redux/Shopping/shopping-actions'
 import {BsFillEyeFill, BsCart2} from 'react-icons/bs'
+import ClockLoader from 'react-spinners/ClockLoader'
 //import React from 'react'
 const Product = ({productData, addToCart,loadCurrent}) => {
-   
    const f = new Intl.NumberFormat("es-sp",{
     currency:"COP",
     style:"currency",
    })
+  
     return ( 
-        
-    <div className='cardContainer'>
+        <>
+        <style
+        jsx>
+            {`
+            .loaderOuter{
+                padding:4em 4em;
+                font-size:2em;
+            }
+            `}
+        </style>
+         <div className='cardContainer'>
         <div className='cardHeader'>
             <h2>
                 {productData.title}
             </h2>
         </div>
         <div className='cardBody'>
-            {!productData.image?<div>cargando...</div>:
+            {!productData.image?
+            <div className='loaderOuter'>
+                <ClockLoader/>
+            </div>:
                 <img
                 src={productData.image}
                 alt={productData.title}
@@ -53,6 +66,10 @@ const Product = ({productData, addToCart,loadCurrent}) => {
                 </button>
         </div>
     </div>
+        
+        
+        </>
+   
 
     );
 }

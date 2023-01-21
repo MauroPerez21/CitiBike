@@ -11,6 +11,7 @@ import About from '../components/About'
 
 export default function Home (){
     document.getElementById('title').innerHTML = 'Citi Bike | inicio '
+    document.documentElement.scrollTop=0
     const [loading, setLoading] = Rt.useState(true)
     useTimeout(()=>setLoading(false),1000)
     const BgImage = {
@@ -20,7 +21,6 @@ export default function Home (){
         backgroundRepeat:`no-repeat`,
         backgroundSize:`cover`
       }
-      
     const [isDisplaying, setIsDisplaying] = useToggle(false)
     const handleClose = ()=>{
         setIsDisplaying(false)
