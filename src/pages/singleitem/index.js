@@ -1,16 +1,12 @@
 //import R from 'react'
 import { connect } from 'react-redux'
 import { addToCart } from '../../redux/Shopping/shopping-actions'
-
 import {useHistory} from 'react-router-dom'
-import Riact from 'react'
+
 const Item = ({currentItem, addToCart}) => {
     document.getElementById('title').innerHTML = 'Citi Bike | #producto '
     document.documentElement.scrollTop=0
     const location = useHistory()
-Riact.useLayoutEffect(()=>{
-    console.log(location)
-})
     return ( 
     <div className='glass'>
         <div className='singleItem'>

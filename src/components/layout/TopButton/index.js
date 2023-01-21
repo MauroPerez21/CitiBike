@@ -26,7 +26,10 @@ export default function TopButton(){
             ref={viewRef}
             className="topbtn"
             onClick={windowTop}
-            ><BsFillArrowUpCircleFill/>
+            >
+            <div>
+                <BsFillArrowUpCircleFill/>
+            </div>
             <div className='top'>
               <p className='topText'>Ir al principio</p>
             </div>

@@ -3,7 +3,6 @@
     width: 80%;
     margin: 40px auto 0;
 }
-
 .table{
     width:100%;
     border-collapse: collapse;
@@ -23,7 +22,6 @@ thead{
     background-color: var(--color-primary);
     border-bottom:2px solid var(--color-primary-dark);
 }
-
 th{
     font-size: 14px;
     font-weight: 600;

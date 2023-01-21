@@ -31,6 +31,9 @@
     transform:translateY(250px);
     transition: 0.5s ease;
   }
+  .topbtn div{
+    transform: translateY(3px);
+  }
 
   .topbtn:hover p{
     transform: translateX(-50px);

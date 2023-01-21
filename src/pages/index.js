@@ -7,6 +7,7 @@ import jump from '../css/nicolas-picard-JjBQLWs2UPA-unsplash.jpg'
 import Rt from 'react'
 import useTimeout from '../hooks/useTimeout'
 import About from '../components/About'
+
 //import R from 'react'
 
 export default function Home (){
