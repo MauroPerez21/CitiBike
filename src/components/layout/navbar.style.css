@@ -1,25 +1,37 @@
+@media screen and (max-width:768px){
+    .topNav .navWrapper{
+        position:fixed;
+        transform: translateY(0);
+    }
+    .navContainer{
+        width: 90%;
+        float:left;
+    }
+}
 .topNav{
     position:fixed;
-    backdrop-filter: grayscale(100%) blur(3px);
-    background: rgb(40, 44, 52, 0.75);
+    backdrop-filter: grayscale(100%) blur(5px);
+    background: rgb(40, 44, 52, 0.65);
     width:100%;
     top:0;
-    right:0;
     height: 48px;
     border-bottom: 2px solid var(--azurra);
     z-index:999;
+    transition: 2s ease-out;
 }
-.fixedNav{
-    position:fixed;
-    right:0;
-    top:0;
-   
+.navContainer{   
+    position:relative;
+    float:right;
+    display:flex;
+    flex-direction: row;
+    transition: 2s step-end;
 }
 .navWrapper{
-  overflow: hidden;
-  display:flex;
-  flex-direction: row;
-   max-width:95%;
+    
+    height: 48px;
+    max-width: 90%;
+    overflow: hidden;
+   margin: 0 auto; 
 }
 .navWrapper a{
     height:48px;

@@ -26,6 +26,7 @@ export default function Home (){
     const handleClose = ()=>{
         setIsDisplaying(false)
     }
+    
     return ( 
     <>
         <div className='bigFontsize'>

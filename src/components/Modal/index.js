@@ -5,7 +5,9 @@ import { BsTelephoneOutbound }  from "react-icons/bs";
 import { FiAlertTriangle} from "react-icons/fi";
 import { RiCloseLine} from "react-icons/ri";
 import Networks from '../Networks'
+
 const Modal = ({bool})=>{
+
     return(
         <div className="modalBg">
            

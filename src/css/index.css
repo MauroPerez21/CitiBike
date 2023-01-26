@@ -26,8 +26,8 @@ main{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-width:100%;
-margin:0 auto;
+  width:100%;
+  margin:0 auto;
 }
 
 .glass{
@@ -186,7 +186,6 @@ display: inline-block;
   border-right: 2px solid var(--blu);
 }
 
-
 .row{
   display:flex;
   max-width: 80%;
@@ -248,32 +247,16 @@ display: inline-block;
 }
 .textAlign{
   text-align: center;
- max-width:50%;
- margin: 24px;
-
-}.textAlign h3{
+  max-width:50%;
+  margin: 24px;
+}
+.textAlign h3{
   letter-spacing: 0.25em;
   text-decoration: none;
 }
 .inlineBlock{
   display: inline-block;
 }
-.mapBtn{
-  border:none;
-  padding:6px 12px;
-  background: var(--blu);
-  color:var(--gs-light);
-  text-transform: uppercase;
-  letter-spacing: 0.125em;
-  transition: 1s;
-  border-radius: var(--radius);
-  cursor:pointer;
-  transition: transform 0.5s;
-}
-.mapBtn:hover{
- transform: scale(1.1);
-}
-
 .iconBiglime{
   font-size: xx-large;
   color: var(--lime);

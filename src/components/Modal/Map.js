@@ -3,6 +3,7 @@ import { FiAlertTriangle} from "react-icons/fi";
 import { RiCloseLine} from "react-icons/ri";
 import Rt from 'react'
 const Map = ({bool})=>{
+  
     const mapRef = Rt.useRef()
     return(
         <div className="modalBg">
