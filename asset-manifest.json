@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Citibike/static/css/main.131cabf6.chunk.css",
-    "main.js": "/Citibike/static/js/main.b8a663a3.chunk.js",
-    "main.js.map": "/Citibike/static/js/main.b8a663a3.chunk.js.map",
+    "main.css": "/Citibike/static/css/main.0d746dcd.chunk.css",
+    "main.js": "/Citibike/static/js/main.51be2019.chunk.js",
+    "main.js.map": "/Citibike/static/js/main.51be2019.chunk.js.map",
     "runtime-main.js": "/Citibike/static/js/runtime-main.1f51cae2.js",
     "runtime-main.js.map": "/Citibike/static/js/runtime-main.1f51cae2.js.map",
-    "static/js/2.3457a715.chunk.js": "/Citibike/static/js/2.3457a715.chunk.js",
-    "static/js/2.3457a715.chunk.js.map": "/Citibike/static/js/2.3457a715.chunk.js.map",
+    "static/js/2.ff00a417.chunk.js": "/Citibike/static/js/2.ff00a417.chunk.js",
+    "static/js/2.ff00a417.chunk.js.map": "/Citibike/static/js/2.ff00a417.chunk.js.map",
     "index.html": "/Citibike/index.html",
-    "static/css/main.131cabf6.chunk.css.map": "/Citibike/static/css/main.131cabf6.chunk.css.map",
-    "static/js/2.3457a715.chunk.js.LICENSE.txt": "/Citibike/static/js/2.3457a715.chunk.js.LICENSE.txt",
+    "static/css/main.0d746dcd.chunk.css.map": "/Citibike/static/css/main.0d746dcd.chunk.css.map",
+    "static/js/2.ff00a417.chunk.js.LICENSE.txt": "/Citibike/static/js/2.ff00a417.chunk.js.LICENSE.txt",
     "static/media/index.css": "/Citibike/static/media/nicolas-picard-JjBQLWs2UPA-unsplash.9bc58e32.jpg",
     "static/media/alesia-kazantceva-Ob1grL3RBvI-unsplash.f55f101e.jpg": "/Citibike/static/media/alesia-kazantceva-Ob1grL3RBvI-unsplash.f55f101e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1f51cae2.js",
-    "static/js/2.3457a715.chunk.js",
-    "static/css/main.131cabf6.chunk.css",
-    "static/js/main.b8a663a3.chunk.js"
+    "static/js/2.ff00a417.chunk.js",
+    "static/css/main.0d746dcd.chunk.css",
+    "static/js/main.51be2019.chunk.js"
   ]
 }
