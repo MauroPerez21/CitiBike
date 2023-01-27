@@ -8,6 +8,10 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
+body{
+  margin:0;
+  overflow-x: hidden;
+}
 :root{
   --lime:#00ff00;
   --azurra:#668cff;
@@ -126,7 +130,7 @@ h3{
   justify-content: center;
 }
 ul {
-  list-style-type: "🛒";
+  list-style-type: none;
   
 }
 

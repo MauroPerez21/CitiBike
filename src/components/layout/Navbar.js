@@ -15,18 +15,20 @@ const Navbar = ({cart}) => {
         setCartCount(count)
     },[cart, cartCount])
     return ( 
-    <div className='topNav'>
-        <div className="appLogo"></div>
-        <div className='navWrapper'>
-            <nav className="navContainer">
-                <Link to='/' className="navLinks">< BsHouse/>&nbsp;inicio</Link> 
-                    <Link to='/productos' className="navLinks"><BsHandIndex/>&nbsp;cat&aacute;logo</Link> 
-                    <Link to='/carrito' className="navLinks">
-                        <BsCart /><span className='exponent'>{cartCount === 0?<></>:cartCount}</span>
-                    </Link>  
-            </nav>
-        </div>    
-    </div> 
+        <>
+            <div className='topNav'>
+                <div className='navWrapper'>
+                    <nav className="navContainer">
+                        <Link to='/' className="navLinks">< BsHouse/>&nbsp;inicio</Link> 
+                            <Link to='/productos' className="navLinks"><BsHandIndex/>&nbsp;cat&aacute;logo</Link> 
+                            <Link to='/carrito' className="navLinks">
+                                <BsCart /><span className='exponent'>{cartCount === 0?<></>:cartCount}</span>
+                            </Link>  
+                    </nav>
+                </div>    
+            </div> 
+        </>
+    
     );
 }
  

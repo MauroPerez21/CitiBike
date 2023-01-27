@@ -8,9 +8,9 @@ import {HashRouter as Router, Switch} from 'react-router-dom'
 export default function Layout({children}) {
   return (
     <>
-<Banner />
 <Router>
-<Navbar/>
+<Navbar/>    
+<Banner />
   <main>
       <Switch>
         {children}  
