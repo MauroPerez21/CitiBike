@@ -35,15 +35,15 @@ You will also see any lint errors in the console.
 ## Prebuild the application
 
 Type on package.json file 
-"scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postbuild": "react-snap"
-  }
+####"scripts": {
+####    "predeploy": "npm run build",
+####    "deploy": "gh-pages -d build",
+####    "start": "react-scripts start",
+####    "build": "react-scripts build",
+####    "test": "react-scripts test",
+####    "eject": "react-scripts eject",
+####    "postbuild": "react-snap"
+####  }
 
 ### $ npm run build
 Create the branch gh-pages or directly from console with npm run deploy
