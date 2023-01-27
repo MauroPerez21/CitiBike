@@ -1,18 +1,67 @@
-# Getting Started with Create React App
+# React Project Using Redux V 1.0 
+## (Only for educational purposes)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## NPM
 
 In the project directory, you can run:
 
 ### `npm start`
 
+## Package JSON 
+
+### npm i redux
+### npm i react-redux
+### `npm install react-icons --save`
+### `npm install react-bootstrap@5.1.3`
+### Bootstrap install: [https://react-icons.github.io/react-icons/]
+### Other : 
+react-ga: [https://www.npmjs.com/package/react-ga] 
+google analytics: [https://analytics.google.com/analytics/web/#/p277755867/reports/intelligenthome]
+react-sanp: [https://www.npmjs.com/package/react-snap]
+
+# Deployment and Production
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+##To Deploy On (gh-pages) Follow These Steps 
+
+### $ git add .
+### $ git commit -m "first commit"
+## Prebuild the application
+
+Type on package.json file 
+"scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
+  }
+
+### $ npm run build
+Create the branch gh-pages or directly from console with npm run deploy
+### Save /root and /docs folder in the new branch
+
+
+### Paste the line
+"homepage": "https://mauroperez21.github.io/Citibike/",
+
+
+## Deployment
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+## Production
+
+Runs the app in the development mode.\
+Open [https://mauroperez21.github.io/Citibike/) to view it in the browser.
+
 
 ### `npm test`
 
@@ -45,30 +94,3 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### `npm install react-icons --save`
-### `npm install react-bootstrap@5.1.3`
-Bootstrap install: [https://react-icons.github.io/react-icons/]
