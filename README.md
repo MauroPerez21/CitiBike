@@ -34,8 +34,8 @@ You will also see any lint errors in the console.
 ### $ git commit -m "first commit"
 ## Prebuild the application
 
-Type on package.json file 
-"scripts": {
+Type on package.json file: 
+###"scripts": {
 ####    "predeploy": "npm run build",
 ####    "deploy": "gh-pages -d build",
 ####    "start": "react-scripts start",
