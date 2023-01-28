@@ -9,13 +9,18 @@ In the project directory, you can run:
 
 ### `npm start`
 
-## Package JSON 
+```bash
+npm start
+# or
+npm run build
+```
 
 ### npm i redux
 ### npm i react-redux
-### `npm install react-icons --save`
 ### `npm install react-bootstrap@5.1.3`
-### Bootstrap install: [https://react-icons.github.io/react-icons/]
+### `npm install react-icons --save`
+### Npm React Icons: 
+- [React icons](https://react-icons.github.io/react-icons/)
 ## Other : 
 ### react-ga: [https://www.npmjs.com/package/react-ga] 
 ### google analytics: [https://analytics.google.com/analytics/web/#/p277755867/reports/intelligenthome]

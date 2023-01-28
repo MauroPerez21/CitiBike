@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { connect} from 'react-redux'
 import './navbar.style.css'
 import ReactGA from 'react-ga'
+
 import { BsHouse, BsCart,BsHandIndex } from "react-icons/bs";
 const Navbar = ({cart}) => {
     const [cartCount, setCartCount] = React.useState(0)
@@ -17,7 +18,7 @@ const Navbar = ({cart}) => {
     return ( 
         <>
         <header className='fixed-top'>
-            <div className='topNav'>
+           <div className='topNav'>
                 <div className='navWrapper'>
                     <nav className="navContainer">
                         <Link to='/' className="navLinks">< BsHouse/>&nbsp;inicio</Link> 
@@ -27,7 +28,7 @@ const Navbar = ({cart}) => {
                             </Link>  
                     </nav>
                 </div>    
-            </div> 
+            </div>  
         </header>
         </>
     

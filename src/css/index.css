@@ -1,16 +1,13 @@
+@import url('./normalize.css');
 @import url('./card.style.css');
 @import url('./containers.style.css');
 @import url('./btnBanner.style.css');
 @import url('./sitem.style.css');
+
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-}
-body{
-  margin:0;
-  overflow-x: hidden;
 }
 :root{
   --lime:#00ff00;

@@ -16,7 +16,10 @@ const Products = ({products}) => {
     <div className="glass">
     <div className='productContainer'>
         <div className='dashboard'>
-             <Link to='/filtros' className="navLinks"><i><IoFunnelSharp/></i> Categorias</Link> 
+            <div className='navaLinks'>
+                <Link to='/filtros'><i><IoFunnelSharp/></i>&nbsp;Categorias</Link> 
+            </div>
+             
         </div>
         <div>
             <h1>Productos</h1>

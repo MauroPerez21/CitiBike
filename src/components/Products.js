@@ -41,15 +41,15 @@ const Product = ({productData, addToCart,loadCurrent}) => {
         </div>
         <div className='cardBox'>
             <div>
-                <h4>Producto:&nbsp;</h4>
+                <span>Producto:&nbsp;</span>
                 <p>{productData.title}</p>
             </div>
             <div>
-                <h4>Descripci&oacute;n:&nbsp;</h4>
+                <span>Descripci&oacute;n:&nbsp;</span>
                 <p>{productData.description}</p>
             </div>
             <div>
-                <h4>Precio:&nbsp;</h4>
+                <span>Precio:&nbsp;</span>
                 <p>${`${f.format(productData.price)}`}</p>
             </div>
         </div>

@@ -58,7 +58,8 @@ overflow: hidden;
 .cardBox div{
     display: flex;
     flex-direction: row;
-    line-height: 2;
+    line-height: 1.5;
+    letter-spacing: 0.125em;
 }
 .cardHeader i{
 font-size: 2em;

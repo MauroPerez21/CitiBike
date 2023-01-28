@@ -1,20 +1,21 @@
 
-@media screen and (max-width:768px){
-    .topNav{
-        position:fixed;
-        
-    }
-}
 .topNav{
-   
-    backdrop-filter: grayscale(100%) blur(5px);
-    background: rgb(40, 44, 52, 0.65);
     width:100%;
-  
     height: 48px;
-    border-bottom: 2px solid var(--azurra);
+    border-bottom: 4px solid var(--azurra);
     z-index:999;
     transition: 2s ease-out;
+}
+.fixed{
+   backdrop-filter: grayscale(100%) blur(5px); 
+   background: rgb(40, 44, 52, 0.65);
+   height:48px; 
+}
+.navWrapper{
+    height: 48px;
+    max-width: 90%;
+    overflow: hidden;
+   margin: 0 auto; 
 }
 .appLogo{
     position: fixed;
@@ -22,7 +23,6 @@
     top:0;
     height:48px;
     width:100%;
-   
     color:#f1f1f1;
 }
 
@@ -33,20 +33,15 @@
     flex-direction: row;
     transition: 2s step-end;
 }
-.navWrapper{
-    
-    height: 48px;
-    max-width: 90%;
-    overflow: hidden;
-   margin: 0 auto; 
-}
-.navWrapper a{
+
+.navContainer a{
     height:48px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     text-decoration: none;
     color:var(--gs-light);
-    border-bottom: 2px solid transparent;
+    border-bottom: 4px solid transparent;
+    padding:3px 6px;
     
 }
 .navLinks{
@@ -54,16 +49,24 @@
     justify-content:left;
     align-items:center;
     list-style: none;
-    width:120px;
     justify-content: center; 
 }
-.navWrapper a:hover,
-.navWrapper a:focus,
-.navWrapper a:active{
-    border-bottom: 2px solid var(--blu);
+.navaLinks{
+border-bottom: 2px solid #333;
+width:192px;
+letter-spacing: none;
+}
+.navaLinks:hover{
+    border-bottom:2px solid var(--blu);
+}
+.navContainer a:hover,
+.navContainer a:focus,
+.navContainer a:active{
+    border-bottom:4px solid var(--blu);
     color:var(--blu);
     background: var(--gs-light);
 }
+
 .exponent{
     font-size: small;
     color:var(--lime);

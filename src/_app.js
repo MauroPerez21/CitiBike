@@ -7,7 +7,7 @@ import SingleItem from './pages/singleitem';
 import { connect } from 'react-redux'
 import {Route, Redirect} from 'react-router-dom'
 import ReactGA from 'react-ga'
-//import 'bootstrap/dist/css/bootstrap.min.css'
+
 const TRACKING_ID = "UA-00000000-3"
 ReactGA.initialize(TRACKING_ID)
 function _app({currentItem}) {

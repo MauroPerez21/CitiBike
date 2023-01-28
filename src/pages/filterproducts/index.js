@@ -18,49 +18,52 @@ const Categories = ({products, filterItems}) => {
     <div className="glass"> 
    <div className="productContainer">
     <div className="dashboard">
-    <Link to='/productos' className="navLinks"><i><IoEllipsisVerticalSharp /></i>Productos</Link> 
+    <div className="navaLinks">
+      <Link to='/productos'><i><IoEllipsisVerticalSharp /></i>&nbsp;Productos</Link> 
+    </div>
+    
     <div className="sidenav">
       <ul>
-        <li className="list active">
+        <li>
           <button onClick={()=>filterItems('1')}
           href="#">
             
-            <span className="title">bicicletas</span>
+            <span >bicicletas</span>
           </button>
         </li>
-        <li className="list">
+        <li>
           <button onClick={()=>filterItems('2')} href="#">
            
-            <span className="title">rines</span>
+            <span>rines</span>
           </button>
         </li>
-        <li className="list">
+        <li>
           <button onClick={()=>filterItems('3')}>
          
             <span className="title">tenedores</span>
           </button>
         </li>
-        <li className="list">
+        <li>
           <button onClick={()=>filterItems('4')}>
           
-            <span className="title">direcci&oacute;n</span>
+            <span>direcci&oacute;n</span>
           </button>
         </li>
-        <li className="list">
+        <li>
           <button onClick={()=>filterItems('5')}>
      
             <span className="title">grupos</span>
           </button>
         </li>
-        <li className="list">
+        <li>
           <button onClick={()=>filterItems('6')}>
          
-            <span className="title">art&iacute;culos</span>
+            <span>art&iacute;culos</span>
           </button>
         </li>
-        <div className="indicator"></div>
       </ul>
     </div>  
+
     </div>
     <div>
         <h1>Categorias</h1>
