@@ -51,7 +51,7 @@ Type on package.json file:
     "eject": "react-scripts eject",
     "postbuild": "react-snap"
   }
-´´´
+```
 ### $ npm run build
 Create the branch gh-pages or directly from console with npm run deploy
 ### Save /root and /docs folder in the new branch
