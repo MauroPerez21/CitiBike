@@ -20,11 +20,12 @@ npm run build
 ### `npm install react-bootstrap@5.1.3`
 ### `npm install react-icons --save`
 ### Npm React Icons: 
+
 - [React icons](https://react-icons.github.io/react-icons/)
 ## Other : 
-### react-ga: [https://www.npmjs.com/package/react-ga] 
-### google analytics: [https://analytics.google.com/analytics/web/#/p277755867/reports/intelligenthome]
-### react-sanp: [https://www.npmjs.com/package/react-snap]
+- [React-GA npm](https://www.npmjs.com/package/react-ga)
+- [Google Analytics](https://analytics.google.com/analytics/web/#/p277755867/reports/intelligenthome)
+- [React Snap](https://www.npmjs.com/package/react-snap)
 
 # Deployment and Production
 
@@ -40,16 +41,17 @@ You will also see any lint errors in the console.
 ## Prebuild the application
 
 Type on package.json file: 
-### "scripts": {
-####    "predeploy": "npm run build",
-####    "deploy": "gh-pages -d build",
-####    "start": "react-scripts start",
-####    "build": "react-scripts build",
-####    "test": "react-scripts test",
-####    "eject": "react-scripts eject",
-####    "postbuild": "react-snap"
-####  }
-
+```
+ "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
+  }
+´´´
 ### $ npm run build
 Create the branch gh-pages or directly from console with npm run deploy
 ### Save /root and /docs folder in the new branch
