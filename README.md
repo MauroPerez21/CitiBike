@@ -17,9 +17,9 @@ In the project directory, you can run:
 ### `npm install react-bootstrap@5.1.3`
 ### Bootstrap install: [https://react-icons.github.io/react-icons/]
 ## Other : 
-###react-ga: [https://www.npmjs.com/package/react-ga] 
-###google analytics: [https://analytics.google.com/analytics/web/#/p277755867/reports/intelligenthome]
-###react-sanp: [https://www.npmjs.com/package/react-snap]
+### react-ga: [https://www.npmjs.com/package/react-ga] 
+### google analytics: [https://analytics.google.com/analytics/web/#/p277755867/reports/intelligenthome]
+### react-sanp: [https://www.npmjs.com/package/react-snap]
 
 # Deployment and Production
 
