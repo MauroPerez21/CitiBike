@@ -66,7 +66,7 @@ const Categories = ({products, filterItems}) => {
         <h1>Categorias</h1>
         {
             loading ? <Hash />:
-            <div className='card'>
+            <div className='kard'>
             {
             products.map(prod =>
             <Products key={prod.id} productData={prod}/>)

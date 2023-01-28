@@ -16,6 +16,7 @@ const Navbar = ({cart}) => {
     },[cart, cartCount])
     return ( 
         <>
+        <header className='fixed-top'>
             <div className='topNav'>
                 <div className='navWrapper'>
                     <nav className="navContainer">
@@ -27,6 +28,7 @@ const Navbar = ({cart}) => {
                     </nav>
                 </div>    
             </div> 
+        </header>
         </>
     
     );

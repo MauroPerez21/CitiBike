@@ -21,7 +21,7 @@ const Products = ({products}) => {
         <div>
             <h1>Productos</h1>
             {loading? <Hash />:
-             <div className='card'>
+             <div className='kard'>
             {products.map(prod => 
             <Product key={prod.id} productData={prod} />
             )}

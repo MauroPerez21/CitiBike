@@ -37,7 +37,7 @@ export default function Home (){
         <section className='glass' >
             <div className="outer" >
                     <div className='inner' style={BgImage}>
-                    <div className='row'>
+                    <div className='rowr'>
                                 <button
                                 className='btn-banner'
                                 onClick={setIsDisplaying}

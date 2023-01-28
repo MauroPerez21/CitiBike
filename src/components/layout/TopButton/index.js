@@ -24,7 +24,7 @@ export default function TopButton(){
         {(top > 240)?
         <div 
             ref={viewRef}
-            className="topbtn"
+            className="topBtn"
             onClick={windowTop}
             >
             <div>

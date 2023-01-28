@@ -35,7 +35,7 @@ You will also see any lint errors in the console.
 ## Prebuild the application
 
 Type on package.json file: 
-###"scripts": {
+### "scripts": {
 ####    "predeploy": "npm run build",
 ####    "deploy": "gh-pages -d build",
 ####    "start": "react-scripts start",

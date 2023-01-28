@@ -1,4 +1,4 @@
-.topbtn{
+.topBtn{
     position: fixed; /* Fixed/sticky position */
     bottom: 24px; /* Place the button at the bottom of the page */
     right: 24px; /* Place the button 30px from the right */
@@ -13,12 +13,12 @@
     font-size: 1.5rem; /* Increase font size */
     transition: 0.2s ease;
   }
-  .topbtn:hover{
+  .topBtn:hover{
       background-color: var(--azurra); /* Set a background color */
       color: var(--gs-react); /* Text color */ 
       border:2px solid var(--gs-react);
   }
-  .topbtn p {
+  .topBtn p {
    position: fixed; /* Fixed/sticky position */
     bottom: 24px; /* Place the button at the bottom of the page */
     right: 24px;
@@ -31,11 +31,9 @@
     transform:translateY(250px);
     transition: 0.5s ease;
   }
-  .topbtn div{
-    transform: translateY(3px);
-  }
+  
 
-  .topbtn:hover p{
+  .topBtn:hover p{
     transform: translateX(-50px);
     visibility: visible;
   }

@@ -83,7 +83,7 @@ h3{
   -webkit-text-stroke-color: var(--gs-light);
   margin: 0 auto;
 }
-.rowBanner{
+.rowrBanner{
   background-color: var(--gs-light);
   display: flex;
   flex-direction: column;
@@ -186,11 +186,11 @@ display: inline-block;
   font-weight: 700;
   font-size: xx-large;
 }
-.row .column:nth-child(1){
+.rowr .column:nth-child(1){
   border-right: 2px solid var(--blu);
 }
 
-.row{
+.rowr{
   display:flex;
   max-width: 80%;
   flex-direction: row;
@@ -200,17 +200,17 @@ display: inline-block;
   width: 100%;
   margin: 0 auto;
 }
-.row img{
+.rowr img{
   max-width:25%;
   filter:grayscale(100%);
 }
 
 @media screen and (max-width:768px) {
-  .row .column:nth-child(1){
+  .rowr .column:nth-child(1){
     border-right:none;
     border-top: 2px solid var(--blu);
   }
-  .row img{
+  .rowr img{
     display:none
   }
   .outer{
