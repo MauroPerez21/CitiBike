@@ -62,7 +62,7 @@ Create the branch gh-pages or directly from console with npm run deploy
 
 
 ## Deployment
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment][https://facebook.github.io/create-react-app/docs/deployment]
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ## Production
 
