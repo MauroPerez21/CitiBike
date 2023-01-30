@@ -20,7 +20,7 @@ function BootsNav({cart}) {
     },[cart, cartCount])
   return (
     <>
-      <Navbar fixed="top" className='fixed'>
+      <Navbar sticky="top" className='fixed'>
         <div className='topNav'>
             <div className='navWrapper'>
                 <nav className="navContainer">
