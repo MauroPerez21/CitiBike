@@ -103,7 +103,7 @@ const Form = ()=>{
                 </div>
             </section>
 )}
-const CitiBike = () =>  ( 
+export const CitiBike = () =>  ( 
         <div className="icon">
             <p>Citi</p>
             <span><IoIosBicycle/></span>

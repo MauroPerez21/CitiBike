@@ -13,7 +13,7 @@
   --lime:#00ff00;
   --azurra:#668cff;
   --blu:#0039e6;
-  --amarello:orange;
+  --orange:orange;
   --rosso:#ff0000;
   --gs-light:#e6e6e6;
   --gs-mid:#808080;
@@ -56,7 +56,7 @@ h2{
 }
 h3{
   font-size: 1.5em;
-  color:var(--blu);
+  color:var(--orange);
   text-decoration: underline;
   margin-bottom: 12px;
 }
@@ -93,7 +93,9 @@ h3{
   margin-bottom: 24px;
   font-size: 2em;
   text-decoration-line:underline ; 
-  color:var(--gs-react);
+}
+.orange{
+  color: var(--orange);
 }
 .firstLetter{
   float: left;
@@ -151,13 +153,15 @@ li::first-letter{
   color:var(--gs-light);
 }
 .outer{
-  background-color: var(--gs-react);
-text-align: center;
+background-color: var(--gs-react);
 padding:12px 24px;
+text-align: center;
 }
 .inner{
-  
-display: inline-block;
+display: flex;
+flex-direction: row;
+align-items:center;
+justify-content:space-evenly;
 }
 .column{
   display: flex;
@@ -197,26 +201,24 @@ display: inline-block;
   width: 100%;
   margin: 0 auto;
 }
-.rowr img{
-  max-width:25%;
-  filter:grayscale(100%);
-}
 
 @media screen and (max-width:768px) {
   .rowr .column:nth-child(1){
     border-right:none;
     border-top: 2px solid var(--blu);
   }
-  .rowr img{
-    display:none
-  }
-  .outer{
-  background-image:
-  url('./nicolas-picard-JjBQLWs2UPA-unsplash.jpg');
+ .inner{
+  padding:2em 4em;
+  flex-direction:column-reverse;
+ }
+ .outer{
+  /*
+  background: url('./nicolas-picard-JjBQLWs2UPA-unsplash.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  }
+  */
+ }
   .bigFontsize{
     margin-top: 12px;
     margin-bottom: 12px;
@@ -265,4 +267,9 @@ display: inline-block;
 .iconBigrosso{
   font-size: xx-large;
   color: var(--rosso);
+}
+.iconApp{
+  padding: 24px;
+  font-size: 192px;
+  color:var(--orange);
 }

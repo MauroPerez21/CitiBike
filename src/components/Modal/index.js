@@ -10,8 +10,7 @@ const Modal = ({bool})=>{
 
     return(
         <div className="modalBg">
-           
-                <div className="modal">
+                <div className="modalWdw">
                 <div className="modalHeader">
                     <h5 className='modalHeading'><FiAlertTriangle/>INFO</h5>  
                     <button className="closeBtn" onClick={bool}>

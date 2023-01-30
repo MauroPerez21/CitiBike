@@ -18,6 +18,7 @@
       color: var(--gs-react); /* Text color */ 
       border:2px solid var(--gs-react);
   }
+ 
   .topBtn p {
    position: fixed; /* Fixed/sticky position */
     bottom: 24px; /* Place the button at the bottom of the page */
@@ -31,7 +32,9 @@
     transform:translateY(250px);
     transition: 0.5s ease;
   }
-  
+  .icoTop{
+    transform: translateY(-3px);
+  }
 
   .topBtn:hover p{
     transform: translateX(-50px);

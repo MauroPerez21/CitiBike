@@ -4,6 +4,7 @@ import Start from './pages'
 import Cart from './pages/cart';
 import Layout from './components/layout'
 import SingleItem from './pages/singleitem';
+import Home from './pages/home'
 import { connect } from 'react-redux'
 import {Route, Redirect} from 'react-router-dom'
 import ReactGA from 'react-ga'
@@ -15,14 +16,15 @@ function _app({currentItem}) {
   return (
     <>
       <Layout>
-              <Route exact path="/" component={Start}/>
-                  <Route exact path="/productos"  component={Products}/>
-                  <Route exact path="/carrito"  component={Cart}/>
-                  <Route exact path="/filtros"  component={FilterProducts}/>
-                  {(currentItem === null) ?
-                  <Redirect to='/'/>:
-                <Route exact path="/producto/:id"  component={SingleItem}/>
-                  }
+        <Route exact path="/" component={Start}/>
+        <Route exact path="/nosotros"  component={Home}/>
+        <Route exact path="/productos"  component={Products}/>
+        <Route exact path="/carrito"  component={Cart}/>
+        <Route exact path="/filtros"  component={FilterProducts}/>
+        {(currentItem === null) ?
+        <Redirect to='/'/>:
+        <Route exact path="/producto/:id"  component={SingleItem}/>
+        }
       </Layout>
     </>
     

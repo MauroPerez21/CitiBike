@@ -4,7 +4,9 @@ import { connect} from 'react-redux'
 import './navbar.style.css'
 import ReactGA from 'react-ga'
 import Navbar from 'react-bootstrap/Navbar'
-import { BsHouse, BsCart,BsHandIndex } from "react-icons/bs";
+import { BsHouse, BsCart,BsHandIndex, 
+ // BsPeople 
+} from "react-icons/bs";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function BootsNav({cart}) {
     const [cartCount, setCartCount] = React.useState(0)
@@ -22,7 +24,8 @@ function BootsNav({cart}) {
         <div className='topNav'>
             <div className='navWrapper'>
                 <nav className="navContainer">
-                    <Link to='/' className="navLinks">< BsHouse/>&nbsp;inicio</Link> 
+                    
+                    <Link to='/nosotros' className="navLinks">< BsHouse/>&nbsp;inicio</Link>  
                         <Link to='/productos' className="navLinks"><BsHandIndex/>&nbsp;cat&aacute;logo</Link> 
                         <Link to='/carrito' className="navLinks">
                             <BsCart /><span className='exponent'>{cartCount === 0?<></>:cartCount}</span>

@@ -7,16 +7,9 @@ const About = () => {
     const handleMap = ()=>{
         setMap(false)
     }
-   
     return ( 
         <>
-        <div className='bigFontsize' id='about'>
-                <p className='blu'>
-                <strong className='firstLetter'>Citi&nbsp;</strong> 
-                <strong className='firstLetter'>Bike&nbsp;</strong>
-                </p> 
-            </div>
-            <h3>En el Oriente Antioque&ntilde;o </h3>
+            
             <button className='mapBtn'
                 onClick={setMap}
                 ><ImLocation/>&nbsp;mapa

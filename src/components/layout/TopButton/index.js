@@ -12,7 +12,7 @@ export default function TopButton(){
         document.body.scrollTop = 0
         document.documentElement.scrollTop = 0
       }
-    React.useEffect(()=>{
+    React.useLayoutEffect(()=>{
         window.addEventListener("scroll",displayTop)
         return () =>{
             window.removeEventListener("scroll",displayTop) 
@@ -27,7 +27,7 @@ export default function TopButton(){
             className="topBtn"
             onClick={windowTop}
             >
-            <div>
+            <div className="icoTop">
                 <BsFillArrowUpCircleFill/>
             </div>
             <div className='top'>

@@ -3,7 +3,12 @@ import './table.style.css'
 import {connect} from 'react-redux'
 import CartItem from './CartItems'
 import { IoCartOutline } from "react-icons/io5";
+import Next from "../../components/Next"
+import useTimeout from '../../hooks/useTimeout';
 const Cart = ({cart}) => {
+    const [loading, setLoading] = R.useState(true)
+    useTimeout(()=>setLoading(false),1000)
+
     document.getElementById('title').innerHTML = 'Citi Bike | carrito '
     document.documentElement.scrollTop=0
     const [totalPrice, setTotalPrice] = R.useState(0)
@@ -29,9 +34,12 @@ const Cart = ({cart}) => {
         setTotalItems
     ])
     return ( 
-    
+   
     <>
-    { totalPrice === 0? 
+    { 
+    loading?<Next />:
+    
+    totalPrice === 0? 
     <div className='cartOuter'>
         <div className='cartInner'>
             <i>

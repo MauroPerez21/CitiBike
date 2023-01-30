@@ -59,12 +59,16 @@ letter-spacing: none;
 .navaLinks:hover{
     border-bottom:2px solid var(--blu);
 }
-.navContainer a:hover,
+.navContainer a:hover{
+    background: inherit;
+    color:var(--orange);
+}
+
 .navContainer a:focus,
 .navContainer a:active{
-    border-bottom:4px solid var(--blu);
-    color:var(--blu);
-    background: var(--gs-light);
+    border-bottom:4px solid var(--orange);
+    color:var(--orange);
+    
 }
 
 .exponent{
