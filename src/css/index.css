@@ -60,26 +60,8 @@ h3{
   text-decoration: underline;
   margin-bottom: 12px;
 }
-.bannerContainer{
-  margin-top: 48px;
-  background-image: url('./Brooklyn\ byke\ NYC.jpg');
-  height: 40vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-clip: content-box;
-  display: grid;
-  place-items: center;
-}
-.centerBanner{
-  color: #f1f1f1;
-  font-size: 4em;
-  font-weight: bolder;
-  -webkit-text-fill-color: rgba(40, 44, 52, 0.1); /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: var(--gs-light);
-  margin: 0 auto;
-}
+
+
 .rowrBanner{
   background-color: var(--gs-light);
   display: flex;
@@ -88,27 +70,8 @@ h3{
   justify-content: center;
   margin: auto;
 }
-.bigFontsize{
-  margin-top: 24px;
-  margin-bottom: 24px;
-  font-size: 2em;
-  text-decoration-line:underline ; 
-}
-.orange{
-  color: var(--orange);
-}
-.firstLetter{
-  float: left;
-  text-transform: uppercase;
-  line-height: 0.75;
-  font-size: 2em;
-}
-.firstLetter::first-letter{
-  float: left;
-  text-transform: uppercase;
-  line-height: 0.5;
-  font-size: 2em;
-}
+
+
 .justifyRight{
   text-align: right;
   border:2px solid lime;

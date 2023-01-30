@@ -1,0 +1,127 @@
+
+.topNav{
+    width:100%;
+    border-bottom: 4px solid var(--azurra);
+    z-index:999;
+    transition: 2s ease-out;
+    backdrop-filter: grayscale(100%) blur(5px); 
+    background: rgb(40, 44, 52, 0.25);
+    border:2px solid lime;
+    z-index: 999999;
+    transform: translateY(-8px);
+}
+
+.navWrapper{
+    max-width: 90%;
+    overflow: hidden;
+   margin: 0 auto; 
+}
+
+.appLogo{
+    position: fixed;
+    background: black;
+    top:0;
+    height:48px;
+    width:100%;
+    color:#f1f1f1;
+}
+
+.navContainer{   
+    position:relative;
+    float:right;
+    display:flex;
+    flex-direction: row;
+    transition: 2s step-end;
+}
+
+.navContainer a{
+    height:48px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:var(--gs-light);
+    border-bottom: 4px solid transparent;
+    padding:3px 6px;
+    
+}
+.navLinks{
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    list-style: none;
+    justify-content: center; 
+}
+.navaLinks{
+    border-bottom: 2px solid #333;
+    width:192px;
+    letter-spacing: none;
+}
+.navaLinks:hover{
+    border-bottom:2px solid var(--blu);
+}
+.navContainer a:hover{
+    background: inherit;
+    color:var(--orange);
+}
+
+.navContainer a:focus,
+.navContainer a:active{
+    border-bottom:4px solid var(--orange);
+    color:var(--orange);
+    
+}
+
+.exponent{
+    font-size: small;
+    color:var(--lime);
+    font-weight: 700;
+    transform: translateY(-4px);
+}
+/*Banner style*/
+.bannerContainer{
+    background-image: url('./Brooklyn\ byke\ NYC.jpg');
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    border: 2px solid red;
+  }
+
+  .bigFontsize{
+    position: absolute;
+    top:48px;
+    left:48px;
+max-width: fit-content;
+    padding:12px 6px;
+    font-size: 1.25em;
+    text-decoration-line:underline ; 
+    border: 2px solid orange;
+
+  }
+  .orange{
+    color: var(--orange);
+  }
+  .firstLetter{
+    float: left;
+    text-transform: uppercase;
+    line-height: 0.75;
+    font-size: 2em;
+  }
+  .firstLetter::first-letter{
+    float: left;
+    text-transform: uppercase;
+    line-height: 0.5;
+    font-size: 2em;
+  }
+  .centerBanner{
+
+    color: #f1f1f1;
+    font-size: 3em;
+    font-weight: bolder;
+    -webkit-text-fill-color: rgba(40, 44, 52, 0.25); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--gs-light);
+
+    margin: 0 auto;
+  }

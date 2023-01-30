@@ -1,5 +1,4 @@
-import Navbar from './BootsNav'
-import Banner from './Banner'
+import Header from './header'
 import Footer from './Footer'
 import React from 'react'
 import Wpp from './Wpp'
@@ -10,8 +9,8 @@ export default function Layout({children}) {
   return (
     <>
 <Router>
-  <Navbar/>    
-      <Banner />
+
+  <Header/>
         <main>
           <Switch>
             {children}  

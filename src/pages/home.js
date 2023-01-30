@@ -43,7 +43,7 @@ const Article = ({toggle, display})=>{
 
 return    (
     <>
-    <div className='bigFontsize'>
+    <div>
             <p className='firstLetter'>
                 lo mejor para ti
             </p> 
