@@ -20,7 +20,7 @@ function BootsNav({cart}) {
     },[cart, cartCount])
   return (
     <>
-      <Navbar sticky="top">
+      <Navbar  className="g-nav index999" expand="lg" sticky="top">
         <div className='topNav'>
             <div className='navWrapper'>
                 <nav className="navContainer">

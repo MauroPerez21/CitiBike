@@ -5,6 +5,7 @@ import CartItem from './CartItems'
 import { IoCartOutline } from "react-icons/io5";
 import Next from "../../components/Next"
 import useTimeout from '../../hooks/useTimeout';
+import {useHistory} from 'react-router-dom'
 const Cart = ({cart}) => {
     const [loading, setLoading] = R.useState(true)
     useTimeout(()=>setLoading(false),1000)
@@ -40,14 +41,8 @@ const Cart = ({cart}) => {
     loading?<Next />:
     
     totalPrice === 0? 
-    <div className='cartOuter'>
-        <div className='cartInner'>
-            <i>
-                <IoCartOutline/>
-            </i>
-            <p className="bigFontsize">no se han seleccionado art&iacute;culos</p>
-        </div>
-    </div>:
+    <NotItems/>
+    :
  <div className='tableContainer'>
  <table className='table'>
  <thead>
@@ -88,7 +83,21 @@ const Cart = ({cart}) => {
     </>
     );
 }
+const NotItems = ()=>{
+    const history = useHistory()
+    useTimeout(()=>history.push('/'), 2000)
+   
 
+return    (
+    <div className='cartOuter'>
+        <div className='cartInner'>
+            <i>
+                <IoCartOutline/>
+            </i><br/>
+            <strong className="alertFonts">no se han seleccionado art&iacute;culos</strong>
+        </div>
+    </div>
+)}
 const mapStateToProps = state =>{
    return {
     cart: state.shop.cart

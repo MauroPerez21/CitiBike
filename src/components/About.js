@@ -10,26 +10,24 @@ const About = () => {
     return ( 
         <>
             
-            <button className='mapBtn'
-                onClick={setMap}
-                ><ImLocation/>&nbsp;mapa
-            </button>
-        <div className='row'>
-            <section className='column'>
-                <div>
-                    <h5>Ciclopaseos</h5>
-                    <i className='iconBiglime'><IoBicycleSharp/></i>
-                    <p>&#10004;&nbsp;Ecoturismo, cross-country y ruta</p>
-                </div>
-            </section>
-            <section className='column'>
-                <div>
-                    <h5>Servicio t&eacute;cnico</h5>
-                    <i className='iconBigrosso'><IoBuildSharp/></i>
-                    <p>&#10004;&nbsp;Servicio en el taller y a domicilio</p> 
-                </div> 
-            </section>
             
+        <div className='rowr'>
+            <div>
+                <h5>Ciclopaseos</h5>
+                <i className='iconBiglime'><IoBicycleSharp/></i>
+                <p>&#10004;&nbsp;Ecoturismo, cross-country y ruta</p>
+            </div>
+
+            <button className='mapBtn'
+            onClick={setMap}
+            ><ImLocation/>&nbsp;mapa
+            </button>
+
+            <div>
+                <h5>Servicio t&eacute;cnico</h5>
+                <i className='iconBigrosso'><IoBuildSharp/></i>
+                <p>&#10004;&nbsp;Servicio en el taller y a domicilio</p> 
+            </div> 
         </div>
         <div className='textAlign'>
             <div className='inlineBlock'>

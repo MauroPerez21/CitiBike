@@ -23,6 +23,7 @@
     text-transform: uppercase;
     border-radius: var(--radius);
     cursor:pointer;
+    color:var(--gs-dark);
     transition:transform .5s;
 }
 .lime{
@@ -30,7 +31,7 @@
    
 }
 .orange{
-    background: var(--amarello);
+    background: var(--orange);
  
 }
 .lime:hover{

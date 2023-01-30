@@ -4,10 +4,11 @@ import BootsNav from './BootsNav'
 function index() {
   return (
     <>
+    <BootsNav/>
      <header>
         <Banner />
     </header>
-    <BootsNav/>
+    
     </>
    
   )

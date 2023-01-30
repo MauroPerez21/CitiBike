@@ -1,14 +1,15 @@
 
 .topNav{
     width:100%;
+    height: 60px;
     border-bottom: 4px solid var(--azurra);
     z-index:999;
     transition: 2s ease-out;
     backdrop-filter: grayscale(100%) blur(5px); 
-    background: rgb(40, 44, 52, 0.25);
-    border:2px solid lime;
+    background: rgb(40, 44, 52, 0.75);
     z-index: 999999;
-    transform: translateY(-8px);
+    transform: translateY(-12px);
+    
 }
 
 .navWrapper{
@@ -42,6 +43,8 @@
     color:var(--gs-light);
     border-bottom: 4px solid transparent;
     padding:3px 6px;
+    transform: translateY(12px);
+    transition: 500ms ease-out;
     
 }
 .navLinks{
@@ -60,13 +63,13 @@
     border-bottom:2px solid var(--blu);
 }
 .navContainer a:hover{
-    background: inherit;
+    transform: translateY(18px);
     color:var(--orange);
 }
 
 .navContainer a:focus,
 .navContainer a:active{
-    border-bottom:4px solid var(--orange);
+    transform: translateY(18px);
     color:var(--orange);
     
 }
@@ -85,18 +88,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: content-box;
-    border: 2px solid red;
+
   }
 
   .bigFontsize{
     position: absolute;
     top:48px;
     left:48px;
-max-width: fit-content;
+    max-width: fit-content;
     padding:12px 6px;
     font-size: 1.25em;
     text-decoration-line:underline ; 
-    border: 2px solid orange;
+ 
 
   }
   .orange{
@@ -115,13 +118,13 @@ max-width: fit-content;
     font-size: 2em;
   }
   .centerBanner{
-
+  
     color: #f1f1f1;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bolder;
     -webkit-text-fill-color: rgba(40, 44, 52, 0.25); /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: var(--gs-light);
-
     margin: 0 auto;
+    transform: translateY(60px);
   }

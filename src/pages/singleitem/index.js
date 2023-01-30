@@ -17,13 +17,13 @@ const Item = ({currentItem, addToCart}) => {
                 className='orange'
                 onClick={()=>location.goBack()}
                 >
-                &laquo;&nbsp;prev
+                &laquo;&nbsp;volver
                 </button>
                 <button
                 className='lime'
                 onClick={()=>addToCart(currentItem.id)}
                 >
-                add to cart&nbsp;&raquo;
+                agregar&nbsp;&raquo;
                 </button> 
             </div>
         </div>

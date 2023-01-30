@@ -151,11 +151,12 @@ justify-content:space-evenly;
   font-size: xx-large;
 }
 .rowr .column:nth-child(1){
-  border-right: 2px solid var(--blu);
+ 
 }
 
 .rowr{
   display:flex;
+  padding: 2em 4em;
   max-width: 80%;
   flex-direction: row;
   flex-wrap:wrap;
@@ -163,12 +164,15 @@ justify-content:space-evenly;
   justify-content: space-around;
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 @media screen and (max-width:768px) {
   .rowr .column:nth-child(1){
-    border-right:none;
-    border-top: 2px solid var(--blu);
+    
+  }
+  .rowr{
+    flex-direction: column;
   }
  .inner{
   padding:2em 4em;
@@ -224,11 +228,11 @@ justify-content:space-evenly;
   display: inline-block;
 }
 .iconBiglime{
-  font-size: xx-large;
+  font-size: 72px;
   color: var(--lime);
 }
 .iconBigrosso{
-  font-size: xx-large;
+  font-size: 72px;
   color: var(--rosso);
 }
 .iconApp{
