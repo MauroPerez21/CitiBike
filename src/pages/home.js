@@ -1,5 +1,6 @@
 
 import Calling from '../components/Modal'
+import Map from '../components/Modal/Map'
 //import Hash from '../components/Loading'
 import useToggle from '../hooks/useToggle'
 import { IoIosBicycle } from "react-icons/io";
@@ -16,17 +17,14 @@ export default function Home (){
     document.documentElement.scrollTop=0
     const [loading, setLoading] = Rt.useState(true)
     useTimeout(()=>setLoading(false),1000)
-    const [isDisplaying, setIsDisplaying] = useToggle(false)
-    const handleClose = ()=>{
-        setIsDisplaying(false)
-    }
+    const [isCalling, setIsCalling] = useToggle(false)
     return ( 
-    <>{
-        loading?
+    <>
+    {loading?
         <Next />:
-        <Article toggle={handleClose} display={isDisplaying}/>
-    }
-        
+        <Article 
+        toggle={setIsCalling} 
+        display={isCalling}/>}
     </>
     );
 }
@@ -43,37 +41,35 @@ const Article = ({toggle, display})=>{
 
 return    (
     <>
-    <div>
-            <p className='firstLetter'>
-                lo mejor para ti
-            </p> 
+    <style jsx>
+        {`
+        .subHeading{
+            padding:12px 24px
+        }
+        `}
+    </style>
+        <div className='subHeading'>
+            <strong className='firstLetter'>lo mejor para ti</strong> 
         </div>
         <section className='glass' >
             <div className="outer" >
-            <h3>En el Oriente Antioque&ntilde;o </h3>
-                    <div className='inner' style={BgImage}>
-                  
-                        <IoIosBicycle className='iconApp'/>  
-                        <ul>
-                            <li>servicio a domicilio</li>
-                            <li>mec&aacute;nico 24/7</li>
-                            <li>bici alquiler</li>
-                        </ul>
-                        <button
-                            className='btn-banner'
-                            onClick={toggle}
-                        >llamar</button>
+            <h3><em>En el Oriente Antioque&ntilde;o </em></h3>
+            <div className='inner' style={BgImage}>
+                <IoIosBicycle className='iconApp'/>  
+                <ul>
+                    <li>servicio a domicilio</li>
+                    <li>mec&aacute;nico 24/7</li>
+                    <li>bici alquiler</li>
+                </ul>
+                <button
+                    className='btn-banner'
+                    onClick={toggle}
+                >llamar</button>
                 </div>  
             </div>
         </section>
-    {
-        display && (
-            <Calling
-            bool={toggle}
-            />
-        )
-    }
-<About />
+        {display && (<Calling bool={toggle}/>)}
+        {!display && (<About Map={Map} />)}
     </>
 )}
 

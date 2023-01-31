@@ -1,16 +1,14 @@
 import { IoBicycleSharp, IoBuildSharp } from "react-icons/io5";
 import {ImLocation} from 'react-icons/im'
-import Map from '../components/Modal/Map'
 import useToggle from '../hooks/useToggle'
-const About = () => {
+
+const About = ({Map}) => {
     const [map, setMap] = useToggle(false)
     const handleMap = ()=>{
-        setMap(false)
+        setMap()
     }
     return ( 
         <>
-            
-            
         <div className='rowr'>
             <div>
                 <h5>Ciclopaseos</h5>
@@ -19,7 +17,7 @@ const About = () => {
             </div>
 
             <button className='mapBtn'
-            onClick={setMap}
+            onClick={handleMap}
             ><ImLocation/>&nbsp;mapa
             </button>
 

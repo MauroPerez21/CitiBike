@@ -14,7 +14,7 @@ const Modal = ({bool})=>{
                 <div className="modalHeader">
                     <h5 className='modalHeading'><FiAlertTriangle/>INFO</h5>  
                     <button className="closeBtn" onClick={bool}>
-                    <RiCloseLine style={{marginBottom:"-3px"}} />
+                        <RiCloseLine style={{marginBottom:"-3px"}} />
                     </button>
                 </div>
                 <div className="modalContent">
@@ -24,7 +24,7 @@ const Modal = ({bool})=>{
                 <div className="modalActions">
                     <div className="actionsContainer">
                     <button className="callBtn">
-                        <a href="tel:3106323631">
+                        <a href="tel:+573106323631">
                         <i><BsTelephoneOutbound /></i>
                         &nbsp;llamar
                         </a>
